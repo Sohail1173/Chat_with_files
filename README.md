@@ -1,1 +1,2 @@
 # Chat_with_files
+This project utilizes large language models to create a web app that enables users to upload multiple PDF files. The app uses the OpenAI API Key to extract question-and-answer (QnA) information from the uploaded PDFs. Initially, all pages from the PDFs are extracted and stored in a variable. To prevent exceeding OpenAI's limits, the pages are divided into smaller chunks using a Recursive Text Splitter. Subsequently, the pages are converted into OpenAI embeddings. These chunks and embeddings are then stored in a vector store named 'chromadb'.
